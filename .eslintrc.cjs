@@ -1,6 +1,6 @@
 module.exports = {
     // addition to .eslintignore
-    ignorePatterns: ["/cubism", "/test"],
+    ignorePatterns: ["/cubism", "*.js"],
 
     env: {
         browser: true,

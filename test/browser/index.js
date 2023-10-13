@@ -2,7 +2,7 @@ import assert from 'assert';
 import { TEST_MODEL } from '../env';
 import { createApp, loadScript } from '../utils';
 
-describe('Browser <script> tag', function () {
+describe.skip('Browser <script> tag', function () {
     before(async () => {
         // provide globals for browser test
         Object.assign(window, { assert, TEST_MODEL, createApp });

@@ -63,8 +63,7 @@ after(() => (config.logLevel = config.LOG_LEVEL_VERBOSE));
 
 // prevent Pixi from flagging WebGL as unsupported in headless test
 // https://github.com/pixijs/pixi.js/issues/6109
-require('@pixi/utils'); // let the property get initialized
-require('@pixi/settings').settings.FAIL_IF_MAJOR_PERFORMANCE_CAVEAT = false;
+require('@pixi/core').settings.FAIL_IF_MAJOR_PERFORMANCE_CAVEAT = false;
 
-import('./module');
-import('./browser');
+require('./module');
+require('./browser');
